@@ -15,62 +15,52 @@ package com.perscholas.java_basics;
 public class JavaBasicsClass {
 
 	public static void main(String[] args) {
-		//#1
 		printIntSum();
-		//#2
 		printDoubleSum();
-		//#3
 		printSumDoubleAndInt();
-		//#4
 		//I changed the value of 'a' from 40 to 40.0
 		//This created an error, but I fixed that by declaring 'a' as a double
 		printQuotient();
-		//#5
 		printQuotient2();
-		//#6
 		printQuotient3();
-		//#7
 		calculatedConstant();
-		//#8
 		totalSale(3,4,2);
 
 
 	}
 	// this method creates two int variables and prints their sum
 	public static void printIntSum() {
-		int a = 5;
-		int b = 10;
-		int sum = a + b;
+		int num1 = 5;
+		int num2 = 10;
+		int sum = num1 + num2;
 		System.out.println(sum);
 	}
 	// this method creates two doubles and prints their sum
 	public static void printDoubleSum() {
-		double a = 5000;
-		double b = 10000;
-		double sum = a + b;
+		double num1 = 5000;
+		double num2 = 10000;
+		double sum = num1 + num2;
 		System.out.println(sum);
 	}
 	//this method creates a double and int and prints their sum
 	public static void printSumDoubleAndInt() {
-		int a = 50;
-		double b = 5000;
-		double sum = a + b;
+		int num1 = 50;
+		double num2 = 5000;
+		double sum = num1 + num2;
 		System.out.println(sum);
-
 	}
 	//this method creates an int and a double and prints their quotient
 	public static void printQuotient() {
-		double a = 40.0;
-		int b = 30;
-		double quotient = (double) a / b;
-
+		double num1 = 40.0;
+		int num2 = 30;
+		double quotient = (double) num1 / num2;
 		System.out.println(quotient);
 	}
 	// this method creates two doubles and prints their quotient
 	public static void printQuotient2() {
-		double a = 50.0;
-		double b = 40.0;
-		double quotient = a / b;
+		double num1 = 50.0;
+		double num2 = 40.0;
+		double quotient = num1 / num2;
 		System.out.println(quotient);
 	}
 	// this method creates two ints (x, y) and a double (q), it prints the quotient of
@@ -95,15 +85,14 @@ public class JavaBasicsClass {
 	}
 	//this method declares prices for 3 products, takes quantities for each of those products
 	//prints out a total price that includes sales tax
-	public static void totalSale(int coffees, int espressos, int greenTeas) {
+	public static void totalSale(int coffeeQuantity, int espressoQuantity,
+								 int greenTeaQuantity) {
 		double coffeePrice = 4.50;
 		double espressoPrice = 2.95;
 		double greenTeaPrice = 1.95;
 		final double SALES_TAX = 0.075;
-
-		double subTotal = (coffees * coffeePrice) + (espressos * espressoPrice) +
-			(greenTeas * greenTeaPrice);
-
+		double subTotal = (coffeeQuantity * coffeePrice) + (espressoQuantity * espressoPrice) +
+			(greenTeaQuantity * greenTeaPrice);
 		double totalSale = subTotal + (subTotal * SALES_TAX);
 		System.out.println("Total price =");
 		System.out.printf("$%.2f",totalSale);
