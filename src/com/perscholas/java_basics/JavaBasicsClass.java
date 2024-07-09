@@ -91,8 +91,10 @@ public class JavaBasicsClass {
 		double espressoPrice = 2.95;
 		double greenTeaPrice = 1.95;
 		final double SALES_TAX = 0.075;
+
 		double subTotal = (coffeeQuantity * coffeePrice) + (espressoQuantity * espressoPrice) +
 			(greenTeaQuantity * greenTeaPrice);
+
 		double totalSale = subTotal + (subTotal * SALES_TAX);
 		System.out.println("Total price =");
 		System.out.printf("$%.2f",totalSale);
