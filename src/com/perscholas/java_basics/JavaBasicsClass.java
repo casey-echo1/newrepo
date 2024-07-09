@@ -1,3 +1,13 @@
+/**
+ * Casey Echternacht
+ * class: 2024-RTT-64
+ * instructor: Ezra Williams
+ * 7/9/2024
+ * This program demonstrates my understanding of how variables work.
+ * It prints the sums and quotients of integers and doubles.
+ *
+ */
+
 
 
 package com.perscholas.java_basics;
